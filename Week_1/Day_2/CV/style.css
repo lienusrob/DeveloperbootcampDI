@@ -1,0 +1,6 @@
+body {background-color: lightcyan}
+
+.About {border: 5px solid rgba(29, 45, 80, 1); width:60%; height:100%;  
+    ; padding: 10px 20px 10px 20px;box-sizing: border-box;height: 20% ;width: 60%;}
+
+ .About{justify-content: end;}
