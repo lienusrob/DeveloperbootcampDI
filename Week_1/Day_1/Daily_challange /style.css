@@ -22,7 +22,7 @@ ul {
     padding: 10px;
     font-size: 1em; 
   } 
-  @media only screen and (max-width:600px) {ul {font-size: 0.5em; }
+  @media only screen and (max-width:600px) {ul {font-size: 0.5em; } p {color: whitesmoke;}
 }
 
 

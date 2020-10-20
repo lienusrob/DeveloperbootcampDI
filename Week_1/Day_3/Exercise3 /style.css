@@ -1,0 +1,38 @@
+section {
+    height : 200px;
+    border: 3px solid red;
+    display:flex; 
+    flex-direction: row;
+    align-items: center; 
+    text-align: center;
+  }
+  
+  .div {
+    background-color: lightblue;
+    height: 20%;
+
+  }
+  
+  .div1 {
+    
+    order: 0; min-width: 10%; 
+    text-align: center;
+    background-color: lightcoral;
+    padding-top: 15px;
+  }
+  
+  .div2 {
+    
+  min-width: 45%;
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 15px;
+
+  }
+  
+  .div3 {
+    
+    order: 1; min-width: 45%; 
+    text-align: center;
+    padding-top: 15px;
+  }
