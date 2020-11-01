@@ -1,0 +1,90 @@
+.container{display: grid;
+grid-template-areas:
+"display display display display"
+"one two three four"
+"five six seven eight"
+"nine ten plus minus " 
+"divide multi equal eEmpty";
+
+grid-gap:5px;
+height: 300px;
+width: 300px;
+margin: auto;
+grid-template-columns: repeat(4, 3fr);
+grid-auto-rows: minmax(100px, 200px);
+
+
+}
+#display{
+    grid-area: display;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+
+}
+.ten{
+    grid-area: ten;
+
+}
+.plus{
+    grid-area: plus;
+}
+.minus{
+    grid-area: minus;
+}
+.x{
+    grid-area: multi;
+}
+.equal {
+    grid-area: equal;}
+.cEmpty{
+    grid-area: cEmpty;
+}
+.multi{
+    grid-area: multi;
+}
+.divide
+{
+    grid-area: divide;
+}
+.cEmpty
+{
+    grid-area: eEmpty;
+}
+body{background-color: antiquewhite;}
+
+#display {
+    background-color: white;
+    color: #c97874;
+    float: left;
+    line-height: 3em;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 10%;
+    width: 18em;
+    height: 3em;

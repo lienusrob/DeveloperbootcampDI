@@ -27,19 +27,32 @@
 // else, console.log ‘I dont care, I prefer cats’
 // Exercise 3: Even Or Not Even
 
-var newDog = "Chihuahua";
-// console.log(newDog.length);
-console.log(newDog.toLowerCase());
-// console.log(newDog.toUpperCase());
-if (newDog === "Chihuahua") {console.log "i love Chihuahua, its my fav"}
-}else { 
-    console.log( "Chihuahua are the best");
-}
+// var newDog = 'Chihuahua';
+// console.log (newDog.length)
+// console.log (newDog.toLocaleUpperCase())
+// if (newDog == 'Chihuahua'){
+//     console.log('I love Chihuahua, it’s my favorite dog breed')
+// } else{
+//     console.log('Chihuahuas are the worst dog breed. Do not @ me.')}
+
+
+// Exercise 3: Even Or Not Even
 
 // Ask a number to the user, and save it to a variable.
 // Check if the variable is an even number
 // If it is, display: “x is an even number’. Where x is the actual number of the user.
 // If it isn’t, display “x is not an even number’. Where x is the actual number of the user
+
+// var num = prompt("enter a number", 5)
+//             if(num%2==0){
+//                 console.log("even")
+//             }
+//             else{
+//                 console.log("odd")
+
+
+
+
 // Exercise 4: Group Chat
 
 // let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"]
@@ -50,4 +63,33 @@ if (newDog === "Chihuahua") {console.log "i love Chihuahua, its my fav"}
 // If there are n>2 people, display the first two names and add “and n-2 more are online”.
 // For example, if there are 5 users, it should display:
 
-// name_user1, name_user2 and 3 more are online
+
+// // name_user1, name_user2 and 3 more are online
+// let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"]
+// if (users.length === 0) {
+//     console.log("no one is online");
+
+
+// } 
+// else if (users.length === 1) {
+//     console.log(users[0]+ " is online");
+// }
+// else if (users.length === 2) {
+//     console.log(users[0] +" and " + users[1] + "are online");
+// }
+
+// else if (users.length > 2) {
+//     console.log(users[0] +" , " + users[1]+  "and" + (users.length - 2)+ " and more are online");
+// }
+
+
+// Create 2 variables, x and y. Each of them has a different numeric value.
+// Write an if/else statement that checks the biggest number.
+// If x equals 5 and y equals 2, the program should display:
+
+// x is the biggest number
+alert("hello")
+var x=1
+var Y=2 
+if (x>Y){console.log( x + " is bigger than " + Y )}
+else if (x<Y){console.log(x + " is smaller than " + Y)}; 
