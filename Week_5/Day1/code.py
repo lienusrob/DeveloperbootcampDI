@@ -58,7 +58,7 @@ bob = Dog("bob", "2")
 print(bob.name, bob.height)
 print(davids_dog.name, davids_dog.height)
 
-Exercise 3 : Who’s The Song Producer ?
+#Exercise 3 : Who’s The Song Producer ?
 
 # Define a class called Song, it will show the lyrics of a song.
 # Its __init__() method should have two arguments: self and lyrics(a list).

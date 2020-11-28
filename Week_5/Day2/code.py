@@ -80,6 +80,8 @@ bob=Dog("bob", 2, 5)
 bob0=Dog("bob0", 2, 10)
 bob1=Dog("bob1", 2,20)
 
+print(bob)
+
 #fight : gets parameter of other_dog, returns string of which dog won the fight between them, whichever has a higher run_speedweight* should win.
 #dont know 
 
