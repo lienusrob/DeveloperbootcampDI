@@ -18,7 +18,7 @@ ON film.language_id = language.language_id
 
 SELECT film.title, film.description, language.name
 FROM film
-LEFT OUTER JOIN  language
+LEFT OUTER JOIN language
 ON film.language_id = language.language_id
 --lastt one not tcorrect but almost
 

@@ -117,21 +117,20 @@ INNER JOIN salesman c
 ON a.salesman_id=c.salesman_id;
 
 
-SELECT custumer_id, first_name
-FROM customer
-RIGHT JOIN payment
-ON customer.custumer_id=payment.custumer_id;
 
 SELECT customer.first_name, customer.last_name, payment.amount, payment.payment_date
 FROM payment
 INNER JOIN customer ON payment.customer_id = customer.customer_id
 -- You need to check your inventory. Write a query to get all the movies which are not in the inventory.
 
-SELECT  inventory_id  as DVD_OnRent
-FROM rental
-WHERE return_date IS NULL;
+SELECT title
+FROM film
+FULL OUTER JOIN inventory ON film.film_id = inventory.film_id WHERE COUNT(*) > 1
 
 -- Write a query to find which city is in which country.
 
+SELECT city.city, country.country 
+FROM city
+INNER JOIN country ON city.country_id = country.country_id 
 -- 15.Bonus :You want to be assured of the performance of your sellers. Write a query to get the customer’s id, names (first and last), the amount and the date of payment ordered by the id of the staff who sold them the dvd.
 

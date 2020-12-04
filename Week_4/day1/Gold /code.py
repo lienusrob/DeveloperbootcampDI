@@ -1,6 +1,7 @@
 #task1 not fully completed \n if its added to get a new line i get an error 
 
-for i in range(5): print("hello world \n " "i love python")
+for i in range(5): print("hello world")
+for i in range(5): print("I love python")
 
 #task2 
 #could not do it with numbers since i am sturggeling with how to write the else or if statment in that case. 

@@ -101,12 +101,7 @@
 # print (','.join(result))
 
 
-#another way 
-# new_list = []
-# for i in range(1500, 2701):
-#     if (i%7==0) and (i%5==0):
-#         new_list.append((i))
-# print(new_list)
+
 #task10 
 
 # Ask the user to type in his/her favorite fruit(s) (one or several fruits).
@@ -141,4 +136,16 @@
 #code is broken grrrrr 
 
 
+# Exercise 11: Who Ordered A Pizza ?
+# Write a loop that prompts the user to enter a series of pizza toppings until they enter a ‘quit’ value.
+# As they enter each topping, print a message saying you’ll add that topping to their pizza.
+# Upon exit print all the toppings on the pizza and what the total is (10 + 2.5 for each topping)
+# pizza=[]
+# pizzaone=[]
+# while pizza != "quit":
+#     pizza=input("topping?")
+#     pizzaone.append(pizza)
+#     print( pizza )
+
+# print(len(pizzaone)*2.5+10)
 

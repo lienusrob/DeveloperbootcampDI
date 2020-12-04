@@ -28,7 +28,6 @@
 # }
 # }
 
-
 # brand["number_stores"] =2
 # brand['country_creation'] = 'Spain'
 
