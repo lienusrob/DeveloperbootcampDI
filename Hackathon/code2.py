@@ -7,7 +7,7 @@ COLUMNS = 7
 board=np.zeros((ROWS, COLUMNS))
 
 gameover = False 
-turn = 0 
+turn = ROWS * COLUMNS 
 
 SLOT  =70
 width = COLUMNS * SLOT
@@ -32,12 +32,12 @@ def draw(board):
 			pygame.draw.rect(window, BLUE, rect)
 			pygame.draw.circle(window, WHITE, c1, RADIUS)
 	for c in range(COLUMNS):
-			for r in range(ROWS):
-				c2 = (int(c*SLOT+SLOT/2), height-int(r*SLOT+SLOT/2))
-				if board[r][c] == 1: 
-					pygame.draw.circle(window, RED,c2, RADIUS)
-				elif board[r][c] == 2: 
-					pygame.draw.cicle(window,GREEN,c2,RADIUS)
+		for r in range(ROWS):
+			c2 = (int(c*SLOT+SLOT/2), height-int(r*SLOT+SLOT/2))
+			if board[r][c] == 1: 
+				pygame.draw.circle(window, RED,c2, RADIUS)
+			elif board[r][c] == 2: 
+				pygame.draw.circle(window, GREEN,c2, RADIUS)
 	pygame.display.update()
 
 
@@ -97,14 +97,14 @@ while not gameover:
 			if turn %2 == 0: 
 				posx = event.pos[0]
 				col = math.floor(posx/SLOT)
-				if valid(board,col):
+				if valid(board,col): 
 							drop(board,col,1)
-				if win(board, 1):
+				if win(board,1):
 								print("player 1 won")
 								gameover = True 
-				else:
-					turn -= 1 
-			else:
+
+		if event.type == pygame.MOUSEBUTTONDOWN:	
+			if turn %2 == 1:
 				posx = event.pos[0]
 				col = math.floor(posx/SLOT)
 				if valid(board,col):
@@ -112,10 +112,10 @@ while not gameover:
 				if win(board, 2):
 								print("player 2 won")
 								gameover = True 
-				else: 
-							turn -= 1 
+
 			turn += 1 
 
-			
+		
 			print(np.flip(board,0))
-			draw(board)
+	draw(board)
+	
