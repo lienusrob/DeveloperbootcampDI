@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> table from gif model</h1>
+<table class="table">
+    <thead> 
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">URL</th>
+        <th scope="col">Uploader Name</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        {% for res in reslut %}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{res.title}}</td>
+        <td>{{res.url}}</td>
+        <td>{{res.uploader_name}}</td>
+      </tr>
+      {%endfor%}
+    
+
+    </tbody>
+  </table>
+<br> 
+<br>
+  <h1> table from catgory modle </h1>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for res in reslut1 %}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{res.name}}</td> </tr>
+      {%endfor%}
+
+    </tbody>
+  </table>
+
+{%endblock%}
+
+<!-- <form method="POST">
+    <div style="padding:20px">
+        {% csrf_token %}
+        <h1>Add Your Question</h1>
+        <table>
+            {{form.as_table}}
+        </table>
+        <button type="submit">Save</button>
+    </div>
+</form> -->

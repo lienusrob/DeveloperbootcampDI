@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile List </title>
+</head>
+<body>
+    <form method = 'GET'>
+        {%csrf_token%} 
+        {%for profile in object_list%}
+        <a href = "{%url 'profile_detail' profile.id%}"> {{profile.user}}</a>
+        {%endfor%}
+    
+    </form>
+</body>
+</html>
